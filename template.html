@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Who Are My Students</title>
+	<!-- site styling -->
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+
+	
+	<style>
+		
+	
+	@media (min-width: 1273px) {
+
+			#layout {
+				padding-left: 250px; /* left col width "#menu" */
+				left: 0;
+			}
+
+			#menu {
+				left: 250px;
+			}
+			.menu-link {
+				display: none;
+			}
+			#layout.active .menu-link {
+				left: 250px;
+				}
+			}
+		@media (max-width: 1273px) {
+
+		/* Only apply this when the window is small. Otherwise, the following case results in extra padding on the left:
+		* Make the window small.
+		* Tap the menu to trigger the active state.
+		* Make the window large again.*/
+			#layout.active {
+				position: relative;
+				left: 250px;
+			}
+
+
+	}
+
+	</style>
+</head><body><!-- <body class="notranslate"> -->
+<div class="bodywrap">
+
+<div class="header">
+	<div id="skiptocontent"><a href="#main">skip to main content</a></div>
+	<a href="index.html"><img class="pure-img-responsive" src="img/banner.png" alt="CSU Student Success Dashboard"/></a>
+</div>
+
+
+<div id="layout">
+	<div class="menu-bar">
+		<a href="#menu" id="menu-link" class="menu-link"><img src="img/menu-txt.png" width="54" height="60" alt="Menu"/></a>
+		
+	</div>
+
+<nav id="menu"><div class="pure-menu">
+
+<a class="pure-menu-heading" href="#"><span class="icon-home"></span>Home</a>
+
+<a class="pure-menu-heading accordion" href="#"><span class="icon-graduation-cap"></span>Graduation Progress</a>
+<ul class="pure-menu-list">
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">GI 2025 Goals and Progress</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Graduation Rate Predictions</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Term-by-Term Progress</a></li>
+	<li class="pure-menu-item"><a href="/static/page/adterm/adterm2.html" class="pure-menu-link">Plus-1 Term Graduation Rates</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Achievement Gap Impacts</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Historical Graduation Rates</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Historical Persistence Rates</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">CSU + Non-CSU Graduation Rates</a></li>
+</ul>
+
+<a class="pure-menu-heading accordion" href="#"> <span class="icon-stats-dots"></span>Interventions and Programs</a>
+<ul class="pure-menu-list">
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Early Predictors of Success</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">High Impact Practices</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Top Course Grade Bottlenecks</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Course GPA Achievement Gaps</a></li>
+</ul>
+
+<a class="pure-menu-heading accordion" href="#"><span class="icon-leanpub"></span>College Readiness</a>
+<ul class="pure-menu-list">
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Student Pathways to Proficiency</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">College Level Math Performance</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Transfer Proficiency at Entry</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Top Feeder High Schools/CCCs</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Top Feeder CCCs</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Student and Faculty Diversity</a></li>
+</ul>
+
+<a class="pure-menu-heading accordion" href="#"><span class="icon-group"></span>Campus Climate</a>
+<ul class="pure-menu-list">
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Student &amp; Faculty Diversity</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Student Characteristics</a></li>	
+</ul>
+
+<a class="pure-menu-heading accordion" href="#"><span class="icon-building"></span>Dept. &amp; Major Analyses</a>
+<ul class="pure-menu-list">
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Overview</a></li>
+	<li class="pure-menu-item pure-menu-selected"><a href="/static/page/whoare/whoare7.html" class="pure-menu-link">Student Demographics</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Unit Accumulation Patterns</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Major Migrations</a></li>
+	<li class="pure-menu-item"><a href="/static/page/botnec/botnec.html" class="pure-menu-link">Dept. Course Grade Bottlenecks</a></li>
+	<li class="pure-menu-item"><a href="/static/page/achgap/achgap.html" class="pure-menu-link">Dept. Course Achievement Gaps</a></li>
+	<li class="pure-menu-item"><a href="/static/page/outcom/outcom4.html" class="pure-menu-link">Academic Outcomes</a></li>
+	<li class="pure-menu-item"><a href="#" class="pure-menu-link">Action Planner</a></li>
+</ul>
+
+</div></nav><!-- /.pure-menu --><!-- /#menu -->
+
+<div id="main">
+
+	<div class="title-bar"><h1>Who Are My Students?</h1></div>
+<div class="content">
+<div class="select-wrap">
+<form class="pure-form"><fieldset>
+<select id="dataset_filter1">
+	<option value="*CSU System" selected>*CSU System</option>
+	<option value="Bakersfield">Bakersfield</option>
+	<option value="Channel Islands">Channel Islands</option>
+	<option value="Chico">Chico</option>
+	<option value="Dominguez Hills">Dominguez Hills</option>
+	<option value="East Bay">East Bay</option>
+	<option value="Fresno">Fresno</option>
+	<option value="Fullerton">Fullerton</option>
+	<option value="Humboldt">Humboldt</option>
+	<option value="Long Beach" selected>Long Beach</option>
+	<option value="Los Angeles">Los Angeles</option>
+	<option value="Maritime Academy">Maritime Academy</option>
+	<option value="Monterey Bay">Monterey Bay</option>
+	<option value="Northridge">Northridge</option>
+	<option value="Pomona">Pomona</option>
+	<option value="Sacramento">Sacramento</option>
+	<option value="San Bernardino">San Bernardino</option> 
+	<option value="San Diego">San Diego</option>
+	<option value="San Francisco">San Francisco</option>
+	<option value="San Jose">San Jose</option>
+	<option value="San Luis Obispo">San Luis Obispo</option>
+	<option value="San Marcos">San Marcos</option>
+	<option value="Sonoma">Sonoma</option>
+	<option value="Stanislaus">Stanislaus</option>
+</select>
+<select id="dataset_filter2"></select>
+<select id="dataset_filter3"></select>
+</fieldset></form>
+</div>
+<!--place charts here-->
+
+<p>Context
+</p>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#chart" aria-controls="chart" role="tab">Demographics</a></li>
+	<li role="presentation"><a href="#trends" aria-controls="trends" role="tab">Trends</a></li>
+	<li role="presentation"><a href="#explanations" aria-controls="explanations" role="tab">Chart FAQ</a></li>
+	<li role="presentation"><a href="#table" aria-controls="table" role="tab">Data Tables</a></li>
+	<li role="presentation"><a href="#method" aria-controls="method" role="tab">Methods</a></li>
+	<li role="presentation"><a href="#applying" aria-controls="applying" role="tab">Applying This Data</a></li>
+	<li role="presentation"><a href="#further" aria-controls="further" role="tab">Resources</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="chart">
+	<h1>Chart</h1>
+</div><!--end tabpanel Chart-->
+
+<div role="tabpanel" class="tab-pane fade" id="trends">
+
+</div><!--end tabpanel Trends-->
+
+<div role="tabpanel" class="tab-pane fade" id="explanations">
+
+</div><!--end tabpanel Explanations-->
+
+<div role="tabpanel" class="tab-pane fade" id="table">
+
+</div><!--end tabpanel Data Tables -->
+
+<div role="tabpanel" class="tab-pane fade" id="method">
+
+</div><!--end tabpanel Method-->
+
+<div role="tabpanel" class="tab-pane fade" id="applying">
+
+</div><!--end tabpanel Applying This Data -->
+
+<div role="tabpanel" class="tab-pane fade" id="further">
+
+<section>
+<p><a href="https://www.merlot.org/" target="new"><img src="img/merlotlogoreverse.png" alt="MERLOT logo" /></a></p>
+<p>The research list below has been generated by MERLOT (Multimedia Educational Resources for Learning and Online Technology), a curated collection of free online teaching and learning services contributed and used by an international education community. The MERLOT collection consists of tens of thousands of discipline-specific learning materials.</p>
+<div id="rssfeed"></div>
+</section>
+
+</div><!--end tabpanel Further Resources-->
+</div>
+
+</div><!--/.content-->
+</div><!--/.main-->
+</div><!--/.layout-->
+
+
+
+<div class="footer">
+	<a href="">Give Us Feedback</a> | <a href="">FAQ</a>
+</div>
+
+</div><!--./bodywrap-->
+<!--jquery and related functions-->
+<script src="js/r_pcore4.js"></script>
+<!--Highcharts-->
+<script src="js/r_gcore3.js"></script>
+
+
+<!-- Analytics goes here -->
+</body></html>
+

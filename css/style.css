@@ -1,0 +1,438 @@
+@charset "UTF-8";
+/* Custom Styles */
+
+/* Custom Styles */
+body {
+color: #212121;
+}
+
+html, body, button, input, select, textarea,svg,
+		.pure-g [class *= "pure-u"] {
+		/* Set your content font stack here: */
+		font-family: 'Open Sans', sans-serif;
+	}
+
+h2 {
+		margin-top: 5px;
+		font-weight: normal;
+	}
+
+#skiptocontent {
+			margin: 0;
+			padding: 0;
+		}
+	
+#skiptocontent a {
+	padding: 6px;
+	position: absolute;
+	top: -40px;
+	left: 0px;
+	color: white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-bottom-right-radius: 8px;
+	background: transparent;
+	-webkit-transition: top 1s ease-out, background 1s linear;
+	transition: top 1s ease-out, background 1s linear;
+	z-index: 100;
+}
+	
+#skiptocontent a:focus {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #1976d2;
+	outline: 0;
+	-webkit-transition: top .1s ease-in, background .5s linear;
+	transition: top .1s ease-in, background .5s linear;
+}
+
+.title-bar {
+	color: #fff;
+	background-image: url(../img/title-background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5px 5px 5px 50px;
+	margin-bottom: 20px;
+}
+
+.pure-form select {
+	padding: 0 .3em;
+}
+
+a {
+	color: #1565c0;
+	color: #0277bd;
+}
+
+.bodywrap {
+	min-width: 600px;
+}
+
+.pure-img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+.header {
+   box-shadow: rgba(0,0,0,0.20) 0 10px 10px;
+	position: relative;
+	z-index: 1000;
+	padding-bottom: 10px;
+    padding-bottom: 5px;
+  
+}
+
+/* small graph box styles */
+.graph-box {
+	border: 1px solid #3f51b5;
+	padding: 1em;
+	margin: 1em;
+}
+.graph-box h2 {
+	background: #3f51b5;
+	color: #fff;
+	padding: .5em;
+	font-weight: normal;
+	margin-top: -16px;
+	margin-left: -16px;
+	margin-right: -16px;
+	font-size: 100%;
+	font-size: 1.2em;
+}
+
+.content {
+margin: 0 auto;
+/*padding: 0 2em;*/
+padding: 1em;
+max-width: 1200px;
+line-height: 1.6em;
+}
+
+.content-960 {
+	max-width: 960px;
+}
+
+.select-wrap {
+	text-align: center;
+	background: #e0e0e0;
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+	margin-bottom: 1.5em;
+}
+
+.pure-form fieldset {
+	padding: .5em;
+}
+
+/*tabs.css*/
+.nav-tabs {
+	border-bottom: 2px solid #3f51b5;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.nav:before, .nav:after {
+	content: " ";
+	display: table;
+}
+
+.nav-tabs>li {
+	float: left;
+	margin-bottom: -1px;
+}
+
+.nav>li {
+	position: relative;
+	display: block;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	color: #fff;
+	cursor: default;
+	background-color: #3f51b5;
+	border-bottom-color: transparent;
+}
+
+.nav-tabs>li>a {
+	margin-right: 5px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	background: #e0e0e0;
+	color: #616161;
+	text-decoration: none;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+	background: #c5cae9;
+	color: #424242;
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+}
+
+.tab-content .tab-pane {
+	border-left: 1px solid #CFD8DC;
+	border-right: 1px solid #CFD8DC;
+	border-bottom: 1px solid #CFD8DC;
+	box-shadow: 3px 3px 3px #888888;
+	padding: 20px;
+	clear: both;
+}
+
+.tab-content>.tab-pane {
+	display: none;
+}
+
+.tab-content>.active {
+	display: block;
+}
+
+/*side-menu.css*/
+/*Add transition to containers so they can push in and out.*/
+#layout,
+#menu,
+	.menu-link {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+/*This is the parent `<div>` that contains the menu and the content area.*/
+#layout {
+	position: relative;
+	left: 0;
+	padding-left: 0;
+	min-height: 43em;
+	padding-bottom: 49px;
+}
+
+#layout.active #menu {
+	width: 250px;
+}
+
+/*The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that appears on the left side of the page.*/
+#menu {
+	margin-left: -250px; /* "#menu" width */
+	width: 250px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 900;
+	background: #f5f5f5;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	font-size: 85%;
+}
+
+/*Firefox overflow bug fix*/
+@-moz-document url-prefix() { 
+  #menu {
+	  bottom: 0;
+	  bottom: -50px;
+  }
+	
+	
+	#layout {
+		min-height: 50em;
+	}
+	
+	.footer {
+		z-index: 1000;
+		position: relative;
+	}
+}
+
+/*All anchors inside the menu should be styled like this.*/
+#menu a {
+	color: #616161; 
+	border-left: 4px transparent solid;
+	padding: .5em 1em;
+}
+
+.pure-menu-heading, .pure-menu-link {
+	white-space: normal;
+}
+
+#menu .pure-menu ul {
+	border: none;
+	background: #e0e0e0;
+}
+
+#menu a.pure-menu-heading.menu-heading-selected,
+#menu a.pure-menu-heading:hover,
+#menu a.pure-menu-heading:focus{
+	background: #e0e0e0;
+	color: #0d47a1;
+}
+	
+a.pure-menu-heading span.expando {
+		float:right;
+	}
+
+/*Change color of the anchor links on hover/focus.*/
+#menu .pure-menu li a:hover,
+#menu .pure-menu li a:focus {
+	background: none;
+	border-left: 4px #0d47a1 solid;
+	color: #0d47a1;
+}
+
+#menu .pure-menu li a:hover:before,
+#menu .pure-menu li a:focus:before {
+	border-left: 5px #01579b solid;
+}
+
+/*This styles a link within a selected menu item `<li>`.*/
+#menu .pure-menu-selected a {
+	border-left: 4px #01579b solid;
+	color: #01579b;
+}
+
+/*Menu heading.*/
+#menu .pure-menu-heading {
+	color: #01579b;
+	margin: 0;
+	padding: .8em .6em;
+	text-transform: none;
+	font-weight: 600;
+}
+
+#menu a.pure-menu-heading {
+	border-left: none;
+}
+
+a.pure-menu-heading span:nth-Child(1) {
+	padding-right:4px;
+}
+a.pure-menu-heading.accordion.expanded {
+	background:#e0e0e0;
+}
+a.pure-menu-heading.accordion {
+	background:#f7f7f7;
+}
+
+.menu-link {
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 1em;
+	position: relative;
+	display: block;
+	background: #1976d2;
+	z-index: 10;
+	border-radius: 0;	
+	float: left;
+	text-align: center;
+	width: 80px;
+	height: 96px;
+}
+
+.menu-link img {
+	margin: 20px auto;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+	background: #1565c0;
+}
+
+.menu-link:hover a,
+.menu-link:focus a{
+	color: #fff;
+}
+
+.footer {
+	padding: 2em;
+	text-align: center;
+	background-color: #e0e0e0;
+	font-size: 90%;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+}
+
+
+.nowrap {
+		white-space: nowrap;
+	}
+
+.red {
+		color: #c92a2a;
+	}
+
+.green {
+	color: #388e3c;
+}
+
+.center {
+	text-align: center;
+}
+
+/***button styles***/
+.pure-button-primary {
+			padding: .5em 1em;
+			background: #1e88e5;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			border-radius: 5px;
+		}
+		
+.pure-button-active {
+		background: #1e88e5;
+		box-shadow: inset 2px 2px 6px rgba(0,0,0,.2);
+		text-shadow: 1px 1px rgba(0,0,0,.2);
+		color: rgba(255,255,255,.8);
+	}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*cascades form fieldset at `50em`, but modify this based on your app's needs.*/
+@media (max-width: 50em) {
+	.pure-form {
+		text-align: left;
+		border: #666;
+		margin: 20px 0;
+		width: 100%;
+		display: block;
+		border-radius: 5px;
+	}
+	.pure-form fieldset select {
+		margin: .25em 0;
+		width: 100%;
+	}
+}
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+@media (max-width: 56.250em) {
+
+	.nav-tabs>li {
+		float: none;
+		margin-bottom: -1px;
+	}
+	.nav-tabs>li>a {
+		border-radius: 0;
+		margin-right: 0;
+	}
+}
+
+
+
+
